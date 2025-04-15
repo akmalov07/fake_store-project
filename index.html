@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mahsulot Katalogi</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="store">Mahsulot Katalogi</h2>
+
+        <form class="form"  >
+        <select id="categoryFilter" class="lol">
+            <option value="all">Barcha Kategoriyalar</option>
+            <option value="men's clothing">Erkaklar kiyimi</option>
+            <option value="jewelery">Taqinchoqlar</option>
+            <option value="electronics">Elektronika</option>
+            <option value="women's clothing">Ayollar kiyimi</option>
+        </select>
+
+        <select id="sortByPrice" class="lol">
+            <option value="default">Narx bo'yicha saralash</option>
+            <option value="asc">O'sish tartibida</option>
+            <option value="desc">Kamayish tartibida</option>
+        </select>
+
+            <input type="text" placeholder="Mahsulot qidirish..." id="searchInput" class="lol">
+        </form>
+
+        <div id="loader" class="loader"></div>
+<div id="content" style="display:none;">
+</div>
+
+        <ul class="card_list"></ul>
+
+    
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
